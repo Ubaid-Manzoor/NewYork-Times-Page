@@ -1,4 +1,7 @@
-
+html , body{
+	margin-bottom: 0;
+	/*height: 100%;*/
+}
 .Header{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -6,11 +9,10 @@
 }
 .main_container{
 	margin-left: 3%;
-	/*position: absolute;*/
+	margin-bottom: 0;
 	 -webkit-box-shadow: -1px 0 2px grey;
 	 -moz-box-shadow: -1px 0 2px grey;
 	  box-shadow: -1px 0 2px grey;
-/*	border:1px solid black;*/
 }
 .main_container:before{
 		content: ".";
@@ -48,27 +50,53 @@ header button{
 	background-color: #ffffff;
 	cursor: pointer;
 }
-/*.icon:hover,.logo:hover,.search_logo:hover{
-	background-color: #f7f7f5;
-}*/
+i[class*="button"]{
+	display: inline-block;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	background-image: url(https://g1.nyt.com/assets/article/20180322-142545/images/sprite/sprite-no-repeat.svg);
+}
+.button-1{
+	background-position: -35px -243px;
+		width: 16px;
+	height: 16px;
+	background-image: url(https://g1.nyt.com/assets/article/20180322-142545/images/sprite/sprite-no-repeat.svg);
+}
+.button-2{
+	background-position: -136px -276px;
+}
+.button-3{
+	background-position: -456px -210px;
+}
 .icon{
 	margin-left: -15px;
 	border: 1px solid #c1baba;
 	width: 104px;
 	border-radius: 3px;
+	 -webkit-box-shadow: -1px 1px 2px grey;
+	 -moz-box-shadow: -1px 1px 2px grey;
+	  box-shadow: -1px 1px 2px grey;
 }
 .logo{
 	margin-left: 20px;
+	border-radius: 3px;
 	border:0;
 }
 .search_logo{
 	margin-left: 20px;
+	border-radius: 3px;
 	border:0;
 }
 .Right{
 	float: right;
 	height:  30px;
 }
+.icon:hover,
+		.logo:hover,
+				.search_logo:hover{
+					background-color: #f7f7f5;
+				}
 .sub_button,.login_button{
 	 margin-right: 10px;
 	background-color: #326891;
@@ -78,6 +106,7 @@ header button{
 	cursor: pointer;
 	padding-right:0;
 	padding-left: 0;
+	color: #ffffff;
 }
 .sub_button:hover,.login_button:hover{
 	opacity: 1;
@@ -183,6 +212,7 @@ article{
 		   .share,
 			     .email,
 			     		.save_logo{
+			     			cursor: pointer;
 				display: inline-block;
 		  	    background-repeat: no-repeat;
 		  	    width: 25px;
@@ -205,6 +235,21 @@ article{
 	    background-position: -405px -210px;
 	    width: 16px;
 }
+.twitter:hover{
+    background-position: -181px -297px;
+}
+.fb:hover{
+	    background-position: -118px -54px; 
+}
+.email:hover{
+        background-position: -204px -21px;
+}
+.share:hover{
+           background-position: -398px -243px;
+}
+.save_logo:hover{
+	    background-position: -440px -210px;
+}
 .share_list_item{
 	padding-right: 15px;
 	margin-right: 10px;
@@ -217,6 +262,15 @@ article{
 	padding-right: 0;
 	margin-right:0;
 	vertical-align: top;
+}
+.comment_button button{
+	cursor: pointer;
+	background-color: #ffffff;
+	border:1px solid #888888;
+	border-radius: 3px;
+}
+.comment_button button:hover{
+	background-color: #f7f7f5;
 }
 .main_story_container:after{
 	content: ".";
@@ -232,6 +286,7 @@ article{
 .caption{
 	width: 50%;
 	font-size: 12px;
+	line-height: 1.4em;
 }
 .caption span{
 	color:#888888;
@@ -239,4 +294,22 @@ article{
 
 body{
 	margin-top: 0;
+}
+.para_collection{
+	margin:30px 30% 0 10%;
+	padding-bottom: 20px;
+}
+.para_collection p{
+	line-height: 1.7em;
+	margin-bottom: 25px;
+	color: #333;
+}
+.para_collection h3{
+	margin-bottom: 20px;
+	font-weight: 600;
+	opacity: 0.9;
+}
+.image_of_inflation{
+	width: 95%;
+	height: auto;
 }
