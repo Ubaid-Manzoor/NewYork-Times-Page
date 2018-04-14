@@ -1,0 +1,242 @@
+
+.Header{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+.main_container{
+	margin-left: 3%;
+	/*position: absolute;*/
+	 -webkit-box-shadow: -1px 0 2px grey;
+	 -moz-box-shadow: -1px 0 2px grey;
+	  box-shadow: -1px 0 2px grey;
+/*	border:1px solid black;*/
+}
+.main_container:before{
+		content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.main_header{
+	width: 97%;
+	position: fixed;
+	top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #ffffff;
+	border-bottom: 1px solid #c1baba;
+	font-size: 12px;
+	z-index: 100;
+}
+header button{
+	height: 30px;
+}
+.Left,
+	.Heading,
+		.Right{
+			display: inline-block;
+		}
+.Left{
+	float: left;
+}
+.icon span,.logo span,.search_logo span{
+	vertical-align: top;
+}
+.icon,.logo,.search_logo{
+	background-color: #ffffff;
+	cursor: pointer;
+}
+/*.icon:hover,.logo:hover,.search_logo:hover{
+	background-color: #f7f7f5;
+}*/
+.icon{
+	margin-left: -15px;
+	border: 1px solid #c1baba;
+	width: 104px;
+	border-radius: 3px;
+}
+.logo{
+	margin-left: 20px;
+	border:0;
+}
+.search_logo{
+	margin-left: 20px;
+	border:0;
+}
+.Right{
+	float: right;
+	height:  30px;
+}
+.sub_button,.login_button{
+	 margin-right: 10px;
+	background-color: #326891;
+	border:0;
+	border-radius: 3px;
+	opacity: 0.8;
+	cursor: pointer;
+	padding-right:0;
+	padding-left: 0;
+}
+.sub_button:hover,.login_button:hover{
+	opacity: 1;
+}
+.sub_button{
+	width: 109px;
+}
+.login_button{
+	width: 50px;
+}
+.setting_icon{
+	cursor: pointer;
+	vertical-align: middle;
+    margin-right: 10px;
+}
+.Articles{
+	margin-top:60px;
+	margin-bottom: 5px; 
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ececec;
+	-webkit-box-shadow: 0 1px 2px #ececec;
+	-moz-box-shadow: 0 1px 2px #ececec;
+	box-shadow: 0 1px 2px #ececec;
+}
+ul li{
+	display: inline-block;
+}
+img[src*="articles"]{
+	float: left;
+
+}
+div[class*="article"]{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+	display: inline-block;
+	width: 240px;
+	font-size: 12px;
+	border-right: 1px solid #ececec;
+	padding-left: 20px;
+}
+article{
+	padding:5px 5px 5px 75px;
+	font-size: 14px;
+	line-height: 1em;
+	font-weight: 300;
+	font-family: "times new roman",times,serif;
+	color: #888888;
+}
+.main_footer{
+	background-repeat: no-repeat;
+	background-position: -66px -54px;
+	width: 25px;
+	height: 25px;
+	background-image: url(https://g1.nyt.com/assets/article/20180322-142545/images/sprite/sprite-no-repeat.svg);
+}
+.story_header{
+	text-align: left; 
+	margin-left: 5px;
+}
+.story_header h3 a{
+	margin-top: 10px;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 600;
+}
+.story_header h3{
+	margin-top: 10px;
+}
+.story_header h1{
+	margin-top: 40px;
+	color: #000000;
+	font-size: 28px;
+	font-weight: 600;
+	border-bottom: 1px solid #888888;
+	padding-bottom: 8px;
+}
+.main_story_container{
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 60px;
+}
+.about_autors{
+	font-size: 13px;
+	display: inline-block;
+}
+.about_autors span{
+	font-weight: 700;
+}
+.info{
+	margin-top: 10px;
+}
+.extra{
+	display: inline-block;
+}
+.logos{
+	display: inline-block;
+	float: right;
+}
+.twitter,
+	    .fb,
+		   .share,
+			     .email,
+			     		.save_logo{
+				display: inline-block;
+		  	    background-repeat: no-repeat;
+		  	    width: 25px;
+		  	    height: 25px;
+			    background-image: url(https://g1.nyt.com/assets/article/20180322-142545/images/sprite/sprite-no-repeat.svg);
+}
+.twitter{
+	background-position: -129px -297px;
+}
+.fb{
+	background-position: -66px -54px; 
+}
+.email{
+    background-position: -152px -21px;
+}
+.share{
+    background-position: -346px -243px;
+}
+.save_logo{
+	    background-position: -405px -210px;
+	    width: 16px;
+}
+.share_list_item{
+	padding-right: 15px;
+	margin-right: 10px;
+	border-right: 1px solid #888888;
+}
+.logo_items{
+		padding-right: 10px;
+}
+.comment_button{
+	padding-right: 0;
+	margin-right:0;
+	vertical-align: top;
+}
+.main_story_container:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.image{
+	margin-top: 15px;
+	width: 100%;
+}
+.caption{
+	width: 50%;
+	font-size: 12px;
+}
+.caption span{
+	color:#888888;
+}
+
+body{
+	margin-top: 0;
+}
