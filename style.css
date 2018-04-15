@@ -299,7 +299,7 @@ body{
 	margin:30px 30% 0 10%;
 	padding-bottom: 20px;
 }
-.para_collection p{
+.para_collection p,.story_cont p{
 	line-height: 1.7em;
 	margin-bottom: 25px;
 	color: #333;
@@ -309,7 +309,106 @@ body{
 	font-weight: 600;
 	opacity: 0.9;
 }
+.theory_of_inflation{
+	position: relative;
+	margin-right:  20%;
+	margin-left: 5%;
+	padding-top: 15px;
+	border-top: 1px solid #e3e1e1;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e3e1e1;
+}
+.theory_of_inflation h3{
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.theory_of_inflation p{
+	font-size: 14px;
+	color: #888888;
+}
+div[class*="content"]{
+	position: absolute;
+	width: 23%;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.3em;
+	color: #888888;
+	overflow: hidden;
+}
+div[class*="content"]:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.content-1{
+	top: 250px;
+}
+.content-2{
+	top: 250px;
+	left: 26%;
+}
+.content-3{
+	top: 250px;
+	left: 51%;
+}
+.content-4{
+	top: 250px;
+	left: 77%;
+}
+.content-5{
+	top: 620px;
+}
+.content-6{
+	top: 620px;
+	left: 26%;
+}
+.content-7{
+	top: 620px;
+	left: 51%;
+}
+.content-8{
+	top: 620px;
+	left: 77%;
+}
 .image_of_inflation{
-	width: 95%;
+	width: 100%;
+	padding-top: 20px;
 	height: auto;
+}
+.theory_of_inflation strong{
+	font-weight: 600;
+	color: #000000;
+	font-family: 'Gugi', cursive;
+}
+.part-1,.part-2,.part-3,.part-4,.part-5{
+	margin-top: 30px;
+	margin-right: 30%;
+	margin-left: 10%;
+}
+.part-3 img{
+	width: 100%;
+}
+.part-3 h3,.part-5 h3{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.video{
+	margin-left: 5%;
+}
+.space_image ,.figcap{
+	margin-right: 30%;
+	margin-left: 5%;
+}
+img[src*="rocket"]{
+	width: 100%;
+}
+.video figcaption,.figcap{
+	font-size: 12px;
+	color: #888888;
+	margin-top:5px; 
+	line-height: 1.4em;
 }
