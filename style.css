@@ -2,6 +2,17 @@ html , body{
 	margin-bottom: 0;
 	/*height: 100%;*/
 }
+.Fixed_box{
+	display: inline-block;
+	width: 35px;
+	height: 70px;
+	position: fixed;
+	top:40%;
+	right: 0;
+	z-index: 1000000;
+	background-color: #e2e2e2;
+	border-radius: 4px 0 0 4px;
+}
 .Header{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -430,7 +441,7 @@ img[src*="rocket"]{
 	padding-top: 10px;
 }
 div[class*="rel_cont"]{
-	width: 210px;
+	width: 208px;
 	display: inline-block;
 	float: left;
 	margin-bottom: 10px;
@@ -519,4 +530,99 @@ aside h3{
 .main_footer{
 	margin-right: 6%;
 	margin-left: 6%;
+	border-top: 2px solid #888888;
+}
+.main_footer:before{
+	content: " ";
+	display: inline-block;
+	width: 100%;
+	border-top:1px solid #888888;
+	padding-top: 12px;
+}
+.footer_Content:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.footer_Content li{
+	display: block;
+	margin-bottom: 10px;
+}
+.footer_Content li a{
+	color: #000000;
+	font-size: 12px;
+}
+.footer_Content li a:hover{
+	text-decoration: underline;
+}
+.footer_Content h3{
+	font-family: 'Gugi', cursive;
+	margin-bottom: 10px;
+}
+div[class*=column]{
+	display: inline-block;
+	width: 15%;
+	float: left;
+}
+.column-5{
+	margin-right: 50px;
+	border-right: 1px solid #888888;
+}
+.Home_delivery_icon,.digital_subscriptions_icon,.crossword{
+	margin-right: 10px;
+	display: inline-block;
+	background-image: url(https://g1.nyt.com/assets/article/20180322-142545/images/sprite/sprite-no-repeat.svg);
+}
+.upper_part{
+	font-weight: 700;
+	vertical-align: text-top;
+}
+.Home_delivery_icon{
+	background-repeat: no-repeat;
+	background-position: -253px -54px;
+	width: 16px;
+	height: 16px;
+}
+.digital_subscriptions_icon{
+	background-repeat: no-repeat;
+	background-position: -119px -276px;
+	width: 16px;
+	height: 16px;
+}
+.crossword{
+	background-repeat: no-repeat;
+	background-position: -376px 0;
+	width: 14px;
+	height: 17px;
+}
+div[class*="column-6"]{
+	width: 16%;
+}
+.last_footer{
+	border-top: 1px solid #999;
+	font-size: 11px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.last_footer li a{
+	color: #999;
+}
+.last_footer li a:hover{
+	text-decoration: underline;
+}
+.left_part{
+	width:71%;
+	margin-right:40px;
+}
+.right_part{
+	width: 25%;
+}
+.left_part,.right_part{
+	display: inline-block;
+}
+.last_footer li{
+	border-right: 1px solid #999;
+	padding-right: 2px;
+	/*margin-right: 1px;*/
 }
